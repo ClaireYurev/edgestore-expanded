@@ -55,7 +55,7 @@ export default function Page() {
                     onProgressChange: async (progress) => {
                       updateFileProgress(addedFileState.key, progress);
                       if (progress === 100) {
-                        // wait 1 second to set it to complete
+                        // wait 1 second to set it to complete 
                         // so that the user can see the progress bar at 100%
                         await new Promise((resolve) =>
                           setTimeout(resolve, 1000)
